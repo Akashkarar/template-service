@@ -1,42 +1,76 @@
-#root {
-  max-width: 1280px;
+.app {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+}
+
+.nav-left button, .nav-right button {
+  margin-right: 10px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+
+.drop-zone {
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  padding: 20px;
   text-align: center;
+  background-color: #f9f9f9;
+  color: #555;
+  cursor: pointer;
+  width: 300px;
+  /* margin: 0 auto; */
+  position: relative;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.file-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.file-name {
+  flex-grow: 1;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.remove-btn:hover {
+  background: darkred;
 }
