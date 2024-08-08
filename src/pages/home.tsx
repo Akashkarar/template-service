@@ -4,13 +4,13 @@ const Home = () => {
   return (
     <div className="App">
       <nav className="navbar">
-        <div className="nav-left"></div>
+        <div className="nav-left">
+          <img src="" alt="image" />
+          <div>TCS</div>
+        </div>
         <div className="nav-right">
           <button>
             <Link to={"login"}>Login</Link>
-          </button>
-          <button>
-            <Link to={"sign-up"}>Sign up</Link>
           </button>
         </div>
       </nav>

@@ -1,9 +1,8 @@
-import { useReducer, useState } from "react";
-import DragAndDrop from "../../components/DragAndDrop";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { generateTemplate } from "../../services/generate";
 
 const Generate: React.FC = () => {
-
   const [file, setFile] = useState<File | null>(null);
 
   // handle data
@@ -12,7 +11,7 @@ const Generate: React.FC = () => {
     const form = new FormData(e.currentTarget);
     const data = Object.fromEntries(form.entries());
     console.log({ data });
-    generateTemplate(data)
+    generateTemplate(data);
   };
 
   return (
@@ -33,12 +32,20 @@ const Generate: React.FC = () => {
           <div>
             <input name="templateName" type="text" />
           </div>
-          Template File:
-          <DragAndDrop name="templateFile" setFile={setFile} file={file} />
-          Validation Schema:
-          <DragAndDrop name="validationSchema" setFile={setFile} file={file} />
         </div>
       </form>
+      <div className="nav-button">
+        <div className="nav-btn-left">
+          <Link to={"../upload"}>
+            <button>previous</button>
+          </Link>
+        </div>
+        <div className="nav-btn-right">
+          <Link to={"../profile"}>
+            <button>next</button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

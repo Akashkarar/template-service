@@ -2,39 +2,77 @@
   font-family: Arial, sans-serif;
   width: 100%;
 }
-
+a{
+  text-decoration: none;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  background-color: #b0ffca;
+  border-radius: 10px;
 }
 
-.nav-left, .nav-right {
-  display: flex;
+.navbar-logo {
+  height: 40px;
 }
 
-.nav-left button, .nav-right button {
-  margin-right: 10px;
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.main-content {
+.sidebar {
+  width: 250px;
+  background-color: #ffd0d0;
   padding: 20px;
+  height: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
-.form-container {
-  max-width: 600px;
+.sidebar h2,
+.sidebar h3 {
   margin: 0 auto;
 }
 
-form label {
-  display: block;
-  margin-bottom: 10px;
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
 }
 
+.sidebar li {
+  margin: 5px 0;
+}
 
+.sign-out-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
 
+.info-container {
+  padding: 20px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #9cccff;
+}
+
+.whole-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+}
 
 .drop-zone {
   border: 2px dashed #aaa;
@@ -73,4 +111,18 @@ form label {
 
 .remove-btn:hover {
   background: darkred;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button button{
+  margin: 10px auto;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #c4aaff;
+  cursor: pointer;
 }
