@@ -10,13 +10,10 @@ const Introduction = () => {
           TCS - Templates Creation Services is the something
         </div>
       </div>
-      <div className="nav-button">
-        <div className="nav-btn-left"></div>
-        <div className="nav-btn-right">
-          <Link to={"../upload"}>
-            <button>next</button>
+      <div>
+          <Link to={"/template/introduction"}>
+            <button>Get started</button>
           </Link>
-        </div>
       </div>
     </div>
   );

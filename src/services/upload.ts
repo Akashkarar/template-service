@@ -1,8 +1,8 @@
-export const generateTemplate: React.FormEventHandler<HTMLFormElement> = async (
+export const uploadTemplate: React.FormEventHandler<HTMLFormElement> = async (
   data
 ) => {
   const response = await fetch(
-    `${process.env.REACT_APP_YOUR_VARIABLE_NAME}/generate`,
+    "https://ratnaafinuatcustomer.aiplservices.com/api/generate",
     {
       body: JSON.stringify(data),
       headers: {

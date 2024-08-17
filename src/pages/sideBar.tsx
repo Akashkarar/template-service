@@ -30,7 +30,6 @@ const Sidebar = () => {
           <Link to={"sign-up"}>Sign-ups</Link>
         </li>
       </ul>
-      {/* <button className="sign-out-button">Sign-out</button> */}
     </aside>
   );
 };

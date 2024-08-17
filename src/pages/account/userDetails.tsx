@@ -6,10 +6,10 @@ const userDetails = () => {
       <h3>User Details</h3>
       <p>username</p>
       <div>
-        <label htmlFor="userName">x-api-key</label>
+        <label htmlFor="username">x-api-key</label>
       </div>
       <div>
-        <label htmlFor="userName">x-client-token</label>
+        <label htmlFor="username">x-client-token</label>
       </div>
 
       <button>
@@ -27,6 +27,10 @@ const userDetails = () => {
           </Link>
         </div>
       </div>
+      <iframe
+        src="http://10.55.12.198:5173/"
+        style={{ width: "80vw", height: "50vh" }}
+      ></iframe>
     </div>
   );
 };

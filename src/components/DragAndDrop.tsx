@@ -1,14 +1,16 @@
 import { useRef } from "react";
-
+type fileType = ".html" | ".json";
 interface DragAndDropProps {
   file: File | null;
   setFile: React.Dispatch<React.SetStateAction<File | null>>;
   name: string;
+  fileType: fileType;
 }
 const DragAndDrop: React.FC<DragAndDropProps> = ({
   name,
   file: _file,
   setFile,
+  fileType,
 }) => {
   // const [file, setFile] = useState<File | null>(null);
 
@@ -78,6 +80,7 @@ const DragAndDrop: React.FC<DragAndDropProps> = ({
         ref={inputRef}
         style={{ display: "none" }}
         onChange={handleChange}
+        accept={fileType}
       />
     </div>
   );
